@@ -1,0 +1,186 @@
+#main {
+	
+	width: 980px;
+	margin: 20px auto;
+	
+	.left {
+		width: 510px;
+		float: left;
+	}
+	.right {
+		width: 460px;
+		float: right;
+		
+		img {
+		
+			margin-top: 30px;
+		}
+	}
+	
+	h1 {
+		
+		color: red;
+		font-size: 48px;
+		.bold;
+		margin-bottom: 10px;
+	}
+	p {
+	
+		color: red;
+		font-size: 28px;
+		.regular;
+		
+		&.small {
+		
+			font-size: 18px;
+		}
+		&.smaller {
+		
+			font-size: 14px;
+		}
+	}
+	form.personal {
+	
+		margin: 20px 0px;
+	}
+	
+	form {
+	
+		fieldset {
+			position: relative;
+			margin-bottom: 7px;
+			label.error {
+			
+				position: absolute;
+				color: red;
+				top: 0px;
+				right: -60px;
+				background: white;
+				padding: 10px;
+				border: 1px solid #999;
+				.radius-full(5px);
+				width: auto;
+				font-size: 15px;
+			}
+		}
+		label {
+		
+			.regular;
+			color: black;
+			font-size: 26px;
+			width: 200px;
+			display: block;
+			float: left;
+		}
+		input[type=text] {
+			font-size: 20px;		
+			padding: 5px;
+
+		}
+		input[type=submit] {
+			margin-top: 15px;
+			clear: both;		
+		}
+		
+	}
+	.question {
+	
+		clear: both;
+		display: block;
+		margin-bottom: 20px;
+		
+		p {
+		
+			margin-bottom: 8px;
+		}
+		ul {
+		
+			list-style: none;
+			
+			li {
+				font-size: 26px;
+				margin-bottom: 8px;
+				margin: 0px;
+			}
+		}
+	
+	}
+	.drag-n-match {
+		position: relative;
+		ul, .snapboxes, .arrow, .options {
+		
+			float: left;
+			
+		}
+		ul {
+		
+			list-style: none;
+			margin: 0px 20px 0px 0px;
+			
+			li {
+				font-size: 22px;
+				margin-bottom: 10px;
+				display: block;
+				
+			}
+		}
+		ul.snapboxes {
+			
+			margin-right: 10px;
+			list-style: none;
+			li {
+			
+				width: 95px;
+				height: 23px;
+				border: 1px dashed #333;
+				display: block;
+				margin-bottom: 12px;
+				
+				&.ui-state-hover {
+				
+					border: 1px dashed red;
+				}
+			}
+		}
+		.arrow {
+		
+			width: 42px;
+			margin-right: 10px;
+			span {
+			
+				margin-top: 97px;
+				color: red;
+				display: block;
+				font-size: 40px;
+			}
+			
+		}
+		.options {
+		
+		
+			li {
+				cursor: move;
+				width: 80px;
+				position: absolute;
+				height: 12px;
+				padding: 2px 10px 9px 5px;
+				font-size: 18px;
+				display: block;
+				margin-bottom: 12px;
+				color: black;
+				border: 1px solid #999;
+				.gradient(#999, #f5f5f5);
+			}
+		}
+		#q1opt1 { top: 0px; }
+		#q1opt2 { top: 37px; }
+		#q1opt3 { top: 73px; }
+		#q1opt4 { top: 110px; }
+		#q1opt5 { top: 147px; }
+		#q1opt6 { top: 185px; }
+		#q1opt7 { top: 223px; }
+		
+	}
+	
+	
+}

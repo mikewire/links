@@ -1,0 +1,186 @@
+.box_transition {
+  -webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-in-out;  /* FF4+ */
+      -ms-transition: all 0.3s ease-in-out;  /* IE10 */
+       -o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-in-out;
+}
+
+.arrow-down(@size, @color) {
+
+
+	float: right;
+	width: 0;
+	height: 0;
+	border-left: @size solid transparent;
+	border-right: @size solid transparent;
+
+	border-top: @size solid @color;
+
+}
+.arrow-up(@size, @color) {
+
+
+	float: right;
+	width: 0;
+	height: 0;
+	border-left: @size solid transparent;
+	border-right: @size solid transparent;
+
+	border-bottom: @size solid @color;
+
+}
+.arrow-right(@size, @color) {
+
+
+	float: right;
+	width: 0;
+	height: 0;
+	border-top: @size solid transparent;
+	border-bottom: @size solid transparent;
+
+	border-left: @size solid @color;
+
+}
+.arrow-left(@size, @color) {
+
+
+	float: left;
+	width: 0;
+	height: 0;
+	border-top: @size solid transparent;
+	border-bottom: @size solid transparent;
+
+	border-right: @size solid @color;
+
+}
+.background-fade {
+  -webkit-transition: background-color 100ms linear;
+  -moz-transition: background-color 100ms linear;
+  -o-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.hover-fade(@speed) {
+
+  -webkit-transition: All @speed ease;
+  -moz-transition: All @speed ease;
+  -o-transition: All @speed ease;
+  -ms-transition: All @speed ease;
+  transition: All @speed ease;
+}
+.turn {
+
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg); /* IE 9 */
+	-webkit-transform: rotate(-10deg); /* Safari and Chrome */
+	-o-transform: rotate(-10deg); /* Opera */
+	-moz-transform: rotate(-10deg); /* Firefox */
+
+}
+.shadow(@top, @left, @blur, @strength, @color) {
+
+
+  -webkit-box-shadow: @top @left @blur @strength @color;
+     -moz-box-shadow: @top @left @blur @strength @color;
+          box-shadow: @top @left @blur @strength @color;
+
+}
+.shadow-none() {
+
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+}
+
+.textshadow(@top, @left, @blur, @color) {
+
+
+  -webkit-text-shadow: @top @left @blur @color;
+     -moz-text-shadow: @top @left @blur @color;
+          text-shadow: @top @left @blur @color;
+
+}
+
+.opaque(@level) {
+
+  @ie_level: @level * 100;
+  
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@ie_level)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=@ie_level);
+
+  /* Netscape */
+  -moz-opacity: @level;
+
+  /* Safari 1.x */
+  -khtml-opacity: @level;
+
+  /* Good browsers */
+  opacity: @level;
+  
+}
+
+.gradient(@start, @end) {
+	/* IE10 */ 
+	background-image: -ms-linear-gradient(bottom, @start 0%, @end 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom, @start 0%, @end 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom, @start 0%, @end 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @end));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, @start 0%, @end 100%);
+	/* Proposed W3C Markup */ 
+	background-image: linear-gradient(bottom, @start 0%, @end 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@start, endColorstr=@end);
+	
+}
+
+
+.border-bottom{
+	border-bottom: solid 1px #b28f55;
+}
+
+.border(@color:#000000) {
+	border: solid 1px @color;
+}
+
+.radius-full(@radius: 5px){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.radius-half(@radius: 5px){
+	-webkit-border-top-left-radius: @radius;
+	-webkit-border-top-right-radius: @radius;
+	-moz-border-radius-topleft: @radius;
+	-moz-border-radius-topright: @radius;
+	border-top-left-radius: @radius;
+	border-top-right-radius: @radius;
+}
+
+.radius-anhalf(@radius: 5px){
+	-webkit-border-bottom-left-radius: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	-moz-border-radius-bottomleft: @radius;
+	-moz-border-radius-bottomright: @radius;
+	border-bottom-left-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
+
+.radius-justright(@radius){
+	-webkit-border-top-right-radius: @radius;
+	-webkit-border-bottom-right-radius: @radius;
+	-moz-border-radius-topright: @radius;
+	-moz-border-radius-bottomright: @radius;
+	border-top-right-radius: @radius;
+	border-bottom-right-radius: @radius;
+}
