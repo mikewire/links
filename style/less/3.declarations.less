@@ -3,9 +3,37 @@
 @grey: #8c8c8c;
 @button-blue: #102553;
 
+@dark-blue: #4d5e70;
+
+@light-blue: #3797d1;
+@purple: #0f2451;
+
 html,body {
 
 	margin:0;padding:0;
 	.regular;
 }
+.wrapper {
 
+	width: 980px;
+	margin: 0px auto;
+	position: relative;
+}
+ul {
+	
+	list-style: none;
+	margin: 0; padding: 0;
+}
+h1,h2,h3 {
+	.headline-regular;
+	margin: 0; padding: 0;
+	font-weight: normal;	
+}
+a {
+	cursor: pointer;
+	color: @light-blue;
+	
+	&:hover {
+		color: @purple;
+	}
+}

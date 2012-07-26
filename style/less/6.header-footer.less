@@ -1,49 +1,292 @@
-.blue-strip {
+footer {
 
-	height: 108px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-color: @blue;
 	width: 100%;
-	z-index: -1;
+	background-color: @dark-blue;
+
+	
+	.column {
+		padding: 10px;	
+		width: 200px;
+		height: 170px;
+		float: left;
+		color: white;
+		margin: 8px 30px 0px 0px;
+		strong.title {
+		
+			text-transform: uppercase;
+			.headline-regular;
+			display: block;
+			font-weight: normal;
+			margin-bottom: 5px;
+		}
+		ul, span, form, p {
+		
+			font-size: 12px;
+		}
+		a {
+			
+			color: white;
+			
+			&:hover {
+			
+				text-decoration: underline;
+			}
+		}
+		
+		&.links {
+			li {
+			
+				margin: 3px 0px;
+				
+			}
+		}
+		&.contacts {
+		
+			span {
+				margin-bottom: 8px;
+				display: block;
+				strong {
+				
+					float: left;
+					margin-right: 5px;
+				}
+			
+			
+			}
+			.btn {
+			
+				font-size: 12px;
+				
+				&:hover {
+				
+					text-decoration: none;
+				}
+			}
+		}
+		&.email {
+			
+			form {
+			
+				margin-top: 5px;
+			}
+			input[type=text] {
+				
+				margin: 0px 0px 6px 0px;
+				font-size: 12px;
+				width: 190px;
+			}
+			.btn {
+			
+				font-size: 12px;
+				
+			}
+		}
+		&.social {
+			margin-right: 0px;
+			a {
+			
+				display: block;
+				float: left;
+				width: 61px;
+				padding: 7px 0px 0px 35px;
+				height: 23px;
+				margin-bottom: 5px;
+				font-size: 12px;
+				&.linkedin	{
+				
+					background: url(../../img/linkedin.jpg) no-repeat top left;
+				}
+				&.facebook	{
+				
+					background: url(../../img/facebook.jpg) no-repeat top left;
+				}
+				&.youtube	{
+				
+					background: url(../../img/facebook.jpg) no-repeat top left;
+				}
+				&.twitter	{
+				
+					background: url(../../img/twitter.jpg) no-repeat top left;
+				}
+		
+			}
+		
+		}
+	}
 }
+
+
+.cityscape {
+
+	width: 100%;
+	position: relative;
+	height: 124px;
+	.wrapper {
+	
+		width: 990px;
+	}
+	ul.cities {
+		padding-left: 12px !important;
+		
+		li {
+			display: block; 
+			
+			a {
+				position: relative;
+				z-index: 9000;	
+				display: block;
+				float: left;
+				color: white;
+				text-align: center;
+				height: 96px;
+				
+				p {
+				
+					margin-top: 103px;
+				}
+				
+			}
+		
+			&.hk a {
+				background: url(../../img/hongkong.jpg) no-repeat;
+				width: 296px;
+			
+			}
+			&.sh a {
+			
+				background: url(../../img/shanghai.jpg) no-repeat;
+				width: 222px;
+			
+			}
+			&.sp a {
+			
+				background: url(../../img/singapore.jpg) no-repeat;
+				width: 222px;
+			
+			}
+			&.mc a {
+			
+				background: url(../../img/macau.jpg) no-repeat;
+				width: 237px;
+			
+			}
+			&:hover {
+			
+				a {
+					background-position: 0px -98px;
+				}
+			}
+		
+		}		
+	}
+	.bar {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		height: 28px;
+		background-color: #8c8c8c;
+	}
+	
+
+}
+
+
 header {
 
-	width: 980px;
-	margin: auto;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	display: block;
+	position: relative;
+	background: #5a6b7b url(../../img/top-strip.jpg) repeat center center;
+	
+	.wrapper {
+		z-index: 2000;
+	}
 	
 	.logo {
 	
-		float: left;
+		background: white;
+		padding: 3px 10px;
+		.shadow(0px, 0px, 5px, 1px, #000);
+		display: block;
+		width: 170px;
 	}
-	.btn {
-		margin-top: 40px;
-		float: right;
-	}
-}
-footer {
-	background-color: @blue;
-	width: 100%;
-	margin-top: 100px;
-	padding: 5px 0px;
-	font-size: 11px;
-	color: #fff;
-	
-	.wrapper {
-	
-		width: 980px;
-		margin: auto;
+	.tools {
 		
-	}
-	a {
-	
-		color: #fff;
-		text-decoration: underline;
+		position: absolute;
+		top: 5px;
+		right: 0px;
+		color: white;	
+		font-size: 12px;
+		ul {
+			float: right;
+			margin-bottom: 5px;
+			li {
+
+				display: inline;
+				margin-right: 5px;
+				
+				&.active a {
+					text-decoration: underline;
+				}
+			}	
 		
-		&:hover {
+		}
+		a {
+			font-size: 13px;
+			.headline-regular;
+			color: white;
+			text-transform: uppercase;
+			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.login-links {
 		
-			text-decoration: none;
+			margin-top: 5px;
+			clear: both;
+			display: block;
+			float: right;
 		}
 	}
+	.nav {
+		position: absolute;
+		top: 77px;
+		right: 0px;
+		li {
+		
+			display: block;
+			float: left;
+			border-right: 1px solid darken(@blue,20%);
+			
+			
+			a {
+				.gradient(#90a1b3, #a5b6c6);
+				padding: 5px 15px;
+				font-size: 13px;
+				.headline-regular;
+				color: white;
+				text-transform: uppercase;
+				
+				&:hover {
+					.gradient(darken(#90a1b3,10%), darken(#a5b6c6,10%));
+				
+				}
+			}
+			&.job-seekers {
+			
+				a {
+					.gradient(darken(#ebebeb,10%), #ebebeb);
+					color: @button-blue;
+				}
+				
+				
+			}
+			
+			
+		}
+	}
+
 }

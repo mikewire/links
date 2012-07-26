@@ -4,16 +4,22 @@
 	margin: 20px auto;
 	
 	.left {
-		width: 510px;
+		width: 710px;
 		float: left;
 	}
 	.right {
-		width: 460px;
+		width: 250px;
 		float: right;
 		
-		img {
+		.box {
 		
-			margin-top: 30px;
+			width: 250px;
+			
+			img {
+				position: static;
+				max-width: 100%;
+				height: auto;
+			}
 		}
 	}
 	
@@ -21,166 +27,130 @@
 		
 		color: red;
 		font-size: 48px;
-		.bold;
+		.headline-bold;
 		margin-bottom: 10px;
+	}	
+	h2 {
+		.headline-bold;
 	}
-	p {
-	
-		color: red;
-		font-size: 28px;
-		.regular;
-		
-		&.small {
-		
-			font-size: 18px;
-		}
-		&.smaller {
-		
-			font-size: 14px;
-		}
+}
+
+.job-search-box {
+
+	padding: 10px 10px 20px 10px;
+	border: 1px solid #999;
+	width: 230px;
+	margin-bottom: 16px;
+
+	h2 {
+		text-transform: uppercase;
+		color: @purple;
+		font-size: 18px;
 	}
-	form.personal {
-	
-		margin: 20px 0px;
+	h3 {
+		font-size: 18px;
+		color: @light-blue;
 	}
 	
 	form {
 	
-		fieldset {
-			position: relative;
-			margin-bottom: 7px;
-			label.error {
+		input[type=text],select {
 			
-				position: absolute;
-				color: red;
-				top: 0px;
-				right: -60px;
-				background: white;
-				padding: 10px;
-				border: 1px solid #999;
-				.radius-full(5px);
-				width: auto;
-				font-size: 15px;
-			}
+			width: 100%;
+			margin-top: 8px;
+			font-size: 13px;
 		}
-		label {
-		
-			.regular;
-			color: black;
-			font-size: 26px;
-			width: 200px;
-			display: block;
-			float: left;
-		}
-		input[type=text] {
-			font-size: 20px;		
-			padding: 5px;
-
-		}
+	
 		input[type=submit] {
-			margin-top: 15px;
-			clear: both;		
-		}
 		
+			margin: 10px 0px;
+			display: block;
+		}
 	}
-	.question {
 	
-		clear: both;
+		
+
+}
+.left .box {
+
+	&:nth-child(odd) {
+	
+		margin-right: 16px;
+	}
+
+}
+.box {
+
+	padding: 10px;
+	border: 1px solid #999;
+	float: left;
+	position: relative;
+	margin: 0px 0px 10px 0px;
+	width: 695px;
+	
+	&.small {
+		width: 325px;
+		height: 150px;
+	}
+	&.big {
+		width: 325px;
+		height: 300px;
+	}
+	&.blue-gradient {
+		.gradient(lighten(@light-blue,40%),white);
+	}
+	.expand {
+	
+		width: 42px;
+		height: 42px;
+		background: url(../../img/expand.png) no-repeat;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+	
+	img {
+		
+		position: absolute;
+		bottom: 25px;
+		right: 25px;
+		
+		&.corner-blocks {
+		
+		
+			bottom: 0px;
+			right: 0px;
+		}
+	}
+	p {
+	
+		color: lighten(black,40%);
+		font-size: 13px;
+		
+		&.narrow {
+		
+			width: 70%;
+		}
+	}
+	h2 {
+		text-transform: uppercase;
+		color: @purple;
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 18px;
+		color: @light-blue;
+	}
+	
+	&.image {
+		border: none;
+		cursor: pointer;
+		padding: 0px;
+	}
+	.news-item {
+	
 		display: block;
-		margin-bottom: 20px;
-		
-		p {
-		
-			margin-bottom: 8px;
-		}
-		ul {
-		
-			list-style: none;
-			
-			li {
-				font-size: 26px;
-				margin-bottom: 8px;
-				margin: 0px;
-			}
-		}
-	
+		font-size: 13px;
+		margin-top: 10px;
 	}
-	.drag-n-match {
-		position: relative;
-		ul, .snapboxes, .arrow, .options {
-		
-			float: left;
-			
-		}
-		ul {
-		
-			list-style: none;
-			margin: 0px 20px 0px 0px;
-			
-			li {
-				font-size: 22px;
-				margin-bottom: 10px;
-				display: block;
-				
-			}
-		}
-		ul.snapboxes {
-			
-			margin-right: 10px;
-			list-style: none;
-			li {
-			
-				width: 95px;
-				height: 23px;
-				border: 1px dashed #333;
-				display: block;
-				margin-bottom: 12px;
-				
-				&.ui-state-hover {
-				
-					border: 1px dashed red;
-				}
-			}
-		}
-		.arrow {
-		
-			width: 42px;
-			margin-right: 10px;
-			span {
-			
-				margin-top: 97px;
-				color: red;
-				display: block;
-				font-size: 40px;
-			}
-			
-		}
-		.options {
-		
-		
-			li {
-				cursor: move;
-				width: 80px;
-				position: absolute;
-				height: 12px;
-				padding: 2px 10px 9px 5px;
-				font-size: 18px;
-				display: block;
-				margin-bottom: 12px;
-				color: black;
-				border: 1px solid #999;
-				.gradient(#999, #f5f5f5);
-			}
-		}
-		#q1opt1 { top: 0px; }
-		#q1opt2 { top: 37px; }
-		#q1opt3 { top: 73px; }
-		#q1opt4 { top: 110px; }
-		#q1opt5 { top: 147px; }
-		#q1opt6 { top: 185px; }
-		#q1opt7 { top: 223px; }
-		
-	}
-	
-	
 }

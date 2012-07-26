@@ -1,0 +1,121 @@
+#main.inner {
+
+	.featured-jobs {
+	
+		clear: both;
+		h2 {
+			text-transform: uppercase;
+			color: @purple;
+			margin-bottom: 5px;
+			font-size: 18px;
+		}
+		a {
+			display: block;
+			width: 22%;
+			margin-left: 10px;
+			float: left;
+			&.first {
+			
+				margin-left: 0px;
+			}
+			h2 {
+				font-size: 16px;
+			}
+			h3 {
+				margin-bottom: 5px;
+			}
+			.first-row, .last-row {
+				margin-bottom: 5px;
+				font-size: 12px;
+			}
+			.first-row {
+				color: grey;
+				float: left;
+				clear: both;
+				width: 80px;
+
+			}
+			.last-row {
+				color: @purple;
+			}
+			&:hover {
+			
+				.shadow(0px,0px,6px,0px,black);
+				
+			}
+		}
+	}
+	.industry-list {
+		margin: 5px 0px;
+		a {
+		
+			display: block;
+			float: left;
+			width: 122px;
+			height: 30px;
+			margin: 0px 2px 3px 0px;
+			font-size: 13px;
+			padding: 5px 10px 5px 0px;
+			
+			span {
+				.arrow-right(5px,@light-blue);	
+				float: left;
+				margin: 3px 5px 0px 0px;
+				
+			}
+			p {
+				color: @purple;
+				float: left;
+				width: 110px;
+			}
+			&:hover {
+				p {text-decoration: underline;}
+			}
+		}
+	}
+	.rss-copy {
+	
+		position: absolute;
+		top: 13px;
+		left: 210px;
+	}
+	.rss-list {
+		margin-top: 10px;
+		a {	
+			display: block;
+			float: left;
+			width: 122px;
+			height: 30px;
+			margin: 0px 2px 3px 0px;
+			font-size: 13px;
+			padding: 5px 10px 5px 0px;
+		
+			span {
+				
+				display: block;
+				float: left;
+				width: 28px;
+				height: 28px;
+				margin-right: 4px;
+				background: url(../../img/rss.jpg) no-repeat;
+			}
+			p {
+				color: @purple;
+				float: left;
+				width: 90px;
+			}
+			&:hover {
+				p {text-decoration: underline;}
+			}
+		}
+	
+	}
+	.rss-sign {
+		z-index: 1000;
+		position: absolute;
+		bottom: -15px;
+		right: -45px;
+	}
+
+}
+

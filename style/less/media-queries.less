@@ -1,11 +1,4 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	.wrapper {
-		
-		margin: 0px 30px 0px 10px;
-	}
-	html, body {
-		width: 1060px;
-	}
 }
 
 
@@ -17,7 +10,33 @@
 
 // Small screen
 @media all and (min-width: 480px) and (max-width: 1260px){
-	
+	.home-hero {
+		.slide span {
+		
+			margin-left: 50px;
+		}
+		.slide.people span {
+		
+			margin-left: 50px;
+			width: 350px;
+		}
+		.move-left {
+			left: 0px;
+			z-index: 8000;
+			&:hover {
+				left: 0px;
+				.opaque(1);
+			}	
+		}
+		.move-right {
+			right: 0px;
+			z-index: 8000;
+			&:hover {
+				right: 0px;
+				.opaque(1);
+			}
+		}
+	}
 }
 
 

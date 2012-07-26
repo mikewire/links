@@ -127,6 +127,7 @@
 }
 
 .gradient(@start, @end) {
+	background: @start;
 	/* IE10 */ 
 	background-image: -ms-linear-gradient(bottom, @start 0%, @end 100%);
 	/* Mozilla Firefox */ 
@@ -139,7 +140,6 @@
 	background-image: -webkit-linear-gradient(bottom, @start 0%, @end 100%);
 	/* Proposed W3C Markup */ 
 	background-image: linear-gradient(bottom, @start 0%, @end 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@start, endColorstr=@end);
 	
 }
 

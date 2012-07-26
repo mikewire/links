@@ -1,7 +1,8 @@
 .btn {
+
 	color: white;
 	font-size: 16px;
-	.bold;
+	.headline-bold;
 	padding: 5px 9px 4px 9px;
 	text-transform: uppercase;
 	.shadow (1px, 1px, 3px, 0px, #000);
@@ -9,15 +10,37 @@
 	text-decoration: none;
 	
 }
+.orange {
+	.gradient(darken(@orange,10%), @orange);
 
+	&:hover {
+		color: white;
+		.gradient(darken(@orange,20%), darken(@orange,10%));
+	}
+
+}
 .blue {
 	.gradient(#075370, #778da2);
 
 	&:hover {
-	
-		.gradient(red, red);		
+		color: white;
+		.gradient(darken(#075370,10%), darken(#778da2,10%));
 	}
 }
+
+.grey {
+
+	.gradient(darken(#ebebeb,40%), darken(#ebebeb,30%));
+	color: white;
+
+	&:hover {
+		color: white;
+		.gradient(darken(#ebebeb,50%), darken(#ebebeb,40%));
+	}
+
+
+}
+
 input[disabled] {
 	border: 1px solid #999;
 	background-color: #ddd;

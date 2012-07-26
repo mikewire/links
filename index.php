@@ -1,107 +1,151 @@
-<? require 'includes/db.php'; ?>
-<!doctype html>
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js <?=$lan?>" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title>The Economist - Win a pair of Beats Solo HD headphones!</title>
-  <meta name="description" content="Win a pair of Beats Solo HD headphones!">
-
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="style/css/0.style.css">
-  <link rel="stylesheet" href="style/css/colorbox.css">
-  
-  <script src="js/libs/modernizr-1.7.min.js"></script>
-
-</head>
-
-<body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-    <div class="blue-strip"></div>
-    <header>
-    	<a href="/" class="logo"><img src="img/logo.jpg" alt="logo" width="218" height="108" /></a>
-    	<a href="/" class="btn blue">Download the PAX Kit</a>
-    	<div class="clearfix"></div>
-    </header>
-   
-    <div id="container">
-
-  		<div id="main" class="home">
-  		
-  			<div class="left">
-   				<h1>Win a pair of Beats Solo HD headphones!</h1>
-   				<p>The Economist recorded 24% growth in readers in the latest PAX survey – the highest among business publications last year.* To find out 
-more, enter the quiz and be in the running to win 1 of 20 Beats Solo HD headphones.</p>
-		
-				<form method="post" action="quiz.php" class="personal">
-					
-					<fieldset>
-						<label for="fullname">Full name *</label>
-						<input type="text" id="fullname" name="fullname" class="required" />
-					</fieldset>
-
-					<fieldset>
-						<label for="fullname">Email *</label>
-						<input type="text" id="email" name="email" class="required email" />
-					</fieldset>
-					
-					<fieldset>
-						<label for="fullname">Company name *</label>
-						<input type="text" id="companyname" name="companyname" class="required" />
-					</fieldset>
-
-					<fieldset>
-						<label for="fullname">Job title *</label>
-						<input type="text" id="job" name="job" class="required" />
-					</fieldset>
-
-					<fieldset>
-						<label for="fullname">Contact number</label>
-						<input type="text" id="contactnumber" name="contactnumber" />
-					</fieldset>
-
-					<fieldset>
-						<label for="fullname">Company address</label>
-						<input type="text" id="companyaddress" name="companyaddress" />
-					</fieldset>
-					
-					<input type="submit" value="Start the quiz" class="btn blue">
-					
-				</form>
+<? include("header.php"); ?>
+    
+    <div class="home-hero">
+    	
+    	<div class="wrapper">
+			<a class="move-left">&#8249;</a>    	
+			<a class="move-right">&#8250;</a>    	
+    		<div class="slide-wrapper">
+    		
+				<div class="slide">
 				
-				<p class="small">Terms and Conditons Apply, <a class="popterms">click here to view</a></p>
-				<p class="smaller">*As measured by PAX Q1 – Q4 2010 – 2011</p>
-			</div>
-			
-			
-			<div class="right">
-			
-				<img src="img/beats.jpg" alt="beats" width="568" height="680" />
-			
-			</div>
-			<div class="clearfix"></div>
-	   	</div>
-   
-    
+					<span>
+						<h1>We clear your head <br />You do what you're great at.</h1>
+						<a class="btn orange">Learn more</a>			
+					</span>
+					<img src="img/home.jpg" alt="home" width="417" height="335" />
+				</div>    	
+
+				<div class="slide bell">
+				
+					<span>
+						<p>From payroll to visa applications and everything in between, Links has your business covered</p>
+						<a class="btn orange">Explore our business services</a>			
+					</span>
+					<img src="img/bell.jpg" alt="bell" width="356" height="279" />
+					
+				</div> 
+				   	
+				<div class="slide people">
+				
+					<span>
+						<p>With over 60,000 candidates, let us find the right person for you</p>
+						<a class="btn orange">View our recruitment offering</a>			
+					</span>
+					<img src="img/people.jpg" alt="people" width="501" height="297" />					
+				</div>  
+
+    		</div>
+    	</div>
     </div>
-    
-    <footer><div class="wrapper">&copy; The Economist 2012 | To find out more about advertising opportunities visit <a href="http://branding.economist.com/">branding.economist.com</a></div></footer>
+   
+   	<div id="main">
+   	
+   		<div class="left">
+   
+	   		<div class="box big">
+	   		
+	   			<h2>Business Services</h2>
+	   			<h3>How can we help you in your business?</h3>
+	   			
+	   			<p>With vast experience across sectors, we can provide a comprehensive range of business services to meet your diverse business needs. We bring you expertise and knowledge built upon our experience working with a large variety of industries and company sizes. <br /><br /><a href="#">More about HR Services &#8250;</a><br /><a href="#">More about payroll services &#8250;</a></p>
+	   			<img src="img/bell-small.jpg" alt="bell-small" width="120" height="95" />
+	   			<div class="expand"></div>
+				   			
+	   		</div>
+	   		
+	   		<div class="box big">
+	   		
+	   			<h2>Recruitment</h2>
+	   			<h3>Find your perfect candidate</h3>
+	   			
+	   			<p>With a database of over 59,000 candidates, we can find the right person for you in no time. We have highly experienced resources across Asia, dedicated teams covering a wide range of industries and job functions. <br /><br /><a class="btn blue" href="#">Get in touch</a></p>
+	   			<div class="expand"></div>
+				   	<img src="img/map.jpg" alt="map" width="190" height="95" />		
+	   		</div>
+	   		
+	   		<div class="box small">
+	   		
+	   			<h2>HR Advisory</h2>
+	   			<h3>Specialized in all divisions</h3>
+	   			
+	   			<p class="narrow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. </p>
+				<img class="corner-blocks" src="img/blocks.png" alt="blocks" width="120" height="108" />
+	   			<div class="expand"></div>
+				   			
+	   		</div>
+	   		
+	   		<div class="box small">
+	   		
+	   			<h2>Recent news</h2>
+	   			
+	   			<span class="news-item">
+	   				<strong>28 May 2012</strong>
+	   				<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+	   			</span>
+	   			<span class="news-item">
+	   				<strong>28 May 2012</strong>
+	   				<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+	   			</span>
+	   			<span class="news-item">
+	   				<strong>28 May 2012</strong>
+	   				<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+	   			</span>
+	   			
+	   			
+	   			<div class="expand"></div>
+				   			
+	   		</div>
+   		
+   		</div> <!-- end of left -->
+   		
+   		
+   		<div class="right">
+	   		<div class="job-search-box">
+	   			<h2>Looking for a job?</h2>
+	   			<form method="" action="">
+	   				<input type="text" id="role" name="role" placeholder="Type in your role, e.g. sales" />
+	   				<select name="industry" id="industry">
+	   					<option value="0">In any industry</option>
+	   					<option>Finance</option>
+	   					<option>Finance</option>
+	   					<option>Finance</option>
+	   					<option>Finance</option>
+	   					<option>Finance</option>
+	   				</select>
+	   				<select name="location" id="location">
+	   					<option value="0">In any location</option>
+	   					<option>Hong Kong</option>
+	   					<option>Hong Kong</option>
+	   					<option>Hong Kong</option>
+	   				</select>
+	   				<select name="salary" id="salary">
+	   					<option value="0">For any salary</option>
+	   					<option></option>
+	   					<option></option>
+	   					<option></option>
+	   				</select>
+	   				<select name="contract_type" id="contract_type">
+	   					<option value="0">Full time</option>
+	   					<option>Part time</option>
+	   				</select>
+	   				
+	   				<input type="submit" value="Find job" class="btn blue" />
+					<a class="btn grey">Quick submit CV</a>
+	   				
+	   			
+	   			</form>
+	   		</div>
+	   		
+	   		<div class="box image">
+	   			<img src="img/salary-guides.jpg" alt="salary-guides" width="285" height="148" />
+	   			<div class="expand"></div>
+	   		</div>
+	   	</div><!-- end of right -->
+	   	<div class="clearfix"></div>
+   </div><!-- end of main -->
+   
+   
 
-   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/libs/jquery.validate.js"></script>
-  <script src="js/script.js"></script>
-  	
-  <!-- end scripts-->
-
-</body>
-</html>
+   
+<? include("footer.php"); ?>
