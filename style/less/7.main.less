@@ -6,15 +6,19 @@
 	.left {
 		width: 710px;
 		float: left;
+		position: relative;
 	}
 	.right {
+		
 		width: 250px;
 		float: right;
 		
 		.box {
 		
-			width: 250px;
-			
+			width: 230px;
+			&.image {
+				width: 250px;
+			}
 			img {
 				position: static;
 				max-width: 100%;
@@ -98,6 +102,9 @@
 	}
 	&.blue-gradient {
 		.gradient(lighten(@light-blue,40%),white);
+	}
+	&.grey-gradient {
+		.gradient(lighten(@blue,20%),white);
 	}
 	.expand {
 	

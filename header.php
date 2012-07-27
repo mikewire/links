@@ -35,8 +35,8 @@
 	    		<li><a href="#">About</a></li>
 	    		<li><a href="#">Business Services</a></li>
 	    		<li><a href="#">Recruitment</a></li>
-	    		<li><a href="#">News & Insight</a></li>
-	    		<li class="job-seekers"><a href="#">For Job Seekers</a></li>
+	    		<li class="current_page_item"><a href="news-insight.php">News & Insight</a></li>
+	    		<li class="job-seekers"><a href="job-seekers.php">For Job Seekers</a></li>
 	    	</ul>
     	</div>
     </header>

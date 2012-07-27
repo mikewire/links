@@ -100,7 +100,7 @@
    		<div class="right">
 	   		<div class="job-search-box">
 	   			<h2>Looking for a job?</h2>
-	   			<form method="" action="">
+	   			<form method="" action="job-results.php">
 	   				<input type="text" id="role" name="role" placeholder="Type in your role, e.g. sales" />
 	   				<select name="industry" id="industry">
 	   					<option value="0">In any industry</option>

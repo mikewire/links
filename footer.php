@@ -74,6 +74,7 @@
 
   <script src="js/libs/jquery.formalize.min.js"></script>
   <script src="js/libs/jquery.validate.js"></script>
+  <script src="js/libs/jquery.masonry.min.js"></script>
   <script src="js/libs/jquery.cycle.js"></script>
   <script src="js/script.js"></script>
   	

@@ -1,0 +1,113 @@
+#main.inner .left .articles .box {
+	margin: 4px;
+}
+#main.inner .article-detail p {
+
+		color: darken(grey,10%);
+		margin: 8px 0px;
+}
+.back {
+
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.article-detail {
+
+	padding: 10px;
+	border: 1px solid #999;
+
+	.date {
+		font-size: 13px;
+		color: @purple;
+		text-transform: uppercase;
+	}
+	h3 {
+		color: @light-blue;
+		font-size: 25px;
+		line-height: 28px;
+		text-transform: uppercase;
+	}
+	img {
+		
+		width: 100%;
+		height: auto;
+	}
+	.author-area {
+		position: relative;
+		padding: 10px 0px;
+		.heading {
+			float: left;		
+			color: @purple;
+			text-transform: uppercase;
+			display: block;
+			margin-right: 10px;
+			.headline-bold;
+		}
+		img {
+			float: left;		
+			margin-right: 10px;
+			width: auto;
+		}
+		.bio {
+			display: block;
+			float: left;
+			
+			h4 {
+				.headline-regular;
+				color: @light-blue;
+				font-size: 18px;
+				margin: 0px;
+			}		
+		
+		}
+		.share {
+			position: absolute;
+			right: 0px;
+			width: 140px;
+		}
+	}
+}
+.articles {
+	margin-top: 10px;
+	.box {
+	
+		width: 205px;	
+		img {
+			width: 100%;
+			height: auto;
+			position: static;
+			margin: 5px 0px;
+		}
+		.date {
+			font-size: 13px;
+			color: @purple;
+			text-transform: uppercase;
+		}
+		h2 {
+			color: @light-blue;
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 18px;
+		}
+		&:hover {
+		
+			.shadow(0px,0px,6px,0px,black);
+			
+		}
+		&:nth-child(odd){
+			margin-right: 4px;
+		}
+		
+	}
+}
+		.two-lines {
+			
+			height: 5px;
+			width: 100%;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+			display: block;
+			margin: 3px 0px;
+		
+		}

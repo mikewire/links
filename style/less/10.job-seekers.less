@@ -1,5 +1,94 @@
 #main.inner {
+	#sort {
+	
+	
+		position: absolute;
+		right: -5px;
+		top: 15px;
+		font-size: 13px;
+	}
+	.job-detail {
+	
+		padding: 10px;
+		border: 1px solid #999;
+		h2 {
+			text-transform: uppercase;
+			color: @purple;
+			font-size: 18px;
+		}
+		h3 {
+			font-size: 18px;
+			color: @light-blue;
+		}
+		span.column {
+			margin: 5px 10px 10px 0px;
+			float: left;
+			width: 310px;
+			display: block;
+			font-size: 13px;
+		}		
+		.first-row {
+			color: grey;
+			float: left;
+			clear: both;
+			width: 120px;
 
+		}
+		.last-row {
+			color: @purple;
+		}
+		p {
+			color: darken(grey,10%);
+			margin: 8px 0px;
+			clear:both;
+		}
+		.btn {
+			display: inline-block;
+			margin: 10px 0px;
+		}
+		.share {
+			position: absolute;
+			right: 0px;
+			display: block;
+			bottom: 20px;
+			width: 160px;
+		}
+	
+	}
+	.search-results {
+	
+		.box {
+			p {
+			
+				margin: 5px 0px 10px 0px;
+			}
+			span {
+				margin: 5px 10px 0px 0px;
+				float: left;
+				width: 210px;
+				display: block;
+				font-size: 13px;
+				height: 30px;
+			}		
+			.first-row {
+				color: grey;
+				float: left;
+				clear: both;
+				width: 120px;
+
+			}
+			.last-row {
+				color: @purple;
+			}
+			&:hover {
+			
+				.shadow(0px,0px,6px,0px,black);
+				
+			}
+
+		}
+	
+	}
 	.featured-jobs {
 	
 		clear: both;
@@ -12,7 +101,7 @@
 		a {
 			display: block;
 			width: 22%;
-			margin-left: 10px;
+			margin-left: 9px;
 			float: left;
 			&.first {
 			
@@ -48,15 +137,14 @@
 	.industry-list {
 		margin: 5px 0px;
 		a {
-		
-			display: block;
-			float: left;
-			width: 122px;
-			height: 30px;
+					
+			display: inline-block;
 			margin: 0px 2px 3px 0px;
 			font-size: 13px;
-			padding: 5px 10px 5px 0px;
-			
+			padding: 5px 10px 5px 10px;
+			.radius-full(5px);
+			.gradient(lighten(@light-blue,40%),white);
+			border: 1px solid lighten(@light-blue,20%);
 			span {
 				.arrow-right(5px,@light-blue);	
 				float: left;
@@ -66,10 +154,11 @@
 			p {
 				color: @purple;
 				float: left;
-				width: 110px;
 			}
 			&:hover {
-				p {text-decoration: underline;}
+				border: 1px solid lighten(@purple,20%);
+				.gradient(@purple,lighten(@purple,20%));
+				p {color: white;}
 			}
 		}
 	}

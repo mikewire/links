@@ -11,4 +11,11 @@ $(document).ready(function() {
 		
 		});
 		
+		var $posts = $('.articles');
+		$posts.imagesLoaded(function(){
+	  		$posts.masonry({
+	    		itemSelector : '.box'
+	 	 	});
+	
+		});
 });

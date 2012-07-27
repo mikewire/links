@@ -16,64 +16,69 @@
    	
    		<div class="left">
    			<span class="title">News & Insight</span>
-   			<p>Search Links International's network of jobs and employers across various industries to find the ideal job for you.</p>	
 	 	   	<div class="articles">
 		   		
-		   		<a class="box">
-		   		
-		   			<h2>Assistant Merchandiser</h2>
-		   			<h3>Foot locker sourcing</h3>
-		   			<div class="first-row">Location</div>
-		   			<div class="last-row">Hong Kong</div>
-		   			<div class="first-row">Career level</div>
-		   			<div class="last-row">Middle</div>
-		   			<div class="first-row">Salary</div>
-		   			<div class="last-row">9k-12k</div>
-		   			<div class="first-row">Date</div>
-		   			<div class="last-row">30 May 2012</div>
-		  	 		<div class="expand"></div>
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-2.png" alt="news-insight-sample-2" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
+		   			<div class="expand"></div>
 		   		</a>
-		   		<a class="box">
-		   		
-		   			<h2>Assistant Merchandiser</h2>
-		   			<h3>Foot locker sourcing</h3>
-		   			<div class="first-row">Location</div>
-		   			<div class="last-row">Hong Kong</div>
-		   			<div class="first-row">Career level</div>
-		   			<div class="last-row">Middle</div>
-		   			<div class="first-row">Salary</div>
-		   			<div class="last-row">9k-12k</div>
-		   			<div class="first-row">Date</div>
-		   			<div class="last-row">30 May 2012</div>
-		  	 		<div class="expand"></div>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		   			<div class="expand"></div>
 		   		</a>
-		   		<a class="box">
-		   		
-		   			<h2>Assistant Merchandiser</h2>
-		   			<h3>Foot locker sourcing</h3>
-		   			<div class="first-row">Location</div>
-		   			<div class="last-row">Hong Kong</div>
-		   			<div class="first-row">Career level</div>
-		   			<div class="last-row">Middle</div>
-		   			<div class="first-row">Salary</div>
-		   			<div class="last-row">9k-12k</div>
-		   			<div class="first-row">Date</div>
-		   			<div class="last-row">30 May 2012</div>
-		  	 		<div class="expand"></div>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		   			<div class="expand"></div>
 		   		</a>
-		   		<a class="box">
-		   		
-		   			<h2>Assistant Merchandiser</h2>
-		   			<h3>Foot locker sourcing</h3>
-		   			<div class="first-row">Location</div>
-		   			<div class="last-row">Hong Kong</div>
-		   			<div class="first-row">Career level</div>
-		   			<div class="last-row">Middle</div>
-		   			<div class="first-row">Salary</div>
-		   			<div class="last-row">9k-12k</div>
-		   			<div class="first-row">Date</div>
-		   			<div class="last-row">30 May 2012</div>
-		  	 		<div class="expand"></div>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		   			<div class="expand"></div>
+		   		</a>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		   			<div class="expand"></div>
+		   		</a>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, </p>
+		   			<div class="expand"></div>
+		   		</a>
+
+		   		<a class="box" href="news-insight-detail.php">
+		   			<span class="date">28 May 2012</span>
+		   			<h2>Our take on the salary trends of 2012</h2>
+		   			<span class="two-lines"></span>
+		   			<img src="img/news-insight-sample-1.png" alt="news-insight-sample-1" width="251" height="141" />
+		   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		   			<div class="expand"></div>
 		   		</a>
 		   	
 		   	</div>
@@ -85,7 +90,7 @@
    		<div class="right">
 	   		<div class="job-search-box">
 	   			<h2>Looking for a job?</h2>
-	   			<form method="" action="">
+	   			<form method="" action="job-results.php">
 	   				<input type="text" id="role" name="role" placeholder="Type in your role, e.g. sales" />
 	   				<select name="industry" id="industry">
 	   					<option value="0">In any industry</option>
@@ -121,6 +126,11 @@
 	   		
 	   		<div class="box image">
 	   			<img src="img/salary-guides.jpg" alt="salary-guides" width="285" height="148" />
+	   			<div class="expand"></div>
+	   		</div>
+	   		<div class="box grey-gradient">
+	   			<h2>MPF in the community</h2>
+	   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 	   			<div class="expand"></div>
 	   		</div>
 	   	</div><!-- end of right -->
